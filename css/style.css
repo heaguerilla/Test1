@@ -1,0 +1,341 @@
+header
+	{height: 323px;
+	width: 100%;
+	background-color: rgba(68,81,98);
+	display: flex;
+	}
+.head1l
+	{display: flex;
+	flex-direction: column;
+	}	
+h1
+	{font-family: arial;
+	font-style: regular;
+	font-size: 60px;
+	color: #fff;
+	margin-left: 50px;
+	line-height: 60px;
+	}
+#headul
+	{font-family: arial;
+	font-style: regular;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 50px;
+	line-height: 36px;
+	list-style: url(../img/tick.png);	
+	}	
+#headblock
+	{height: 215px;
+	width: 470px;
+	background-color: #fff;	
+	position: relative;
+	left: 230px;/*костыль не удается позиционировать блок*/
+	top: 50px;/*костыль*/
+	}
+body
+	{width: 1280px;
+	}
+.container
+	{
+	}
+.top1
+	{height: 250px; /*345 костыль блок правый добавляет высоты, победить не смог*/
+	width: 100%;
+	background-color: #fff;
+	color: rgba(68,81,97);	
+	}
+h2
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;	
+	margin-left: 50px;
+	margin-top: 50px;
+	}
+.top1 p
+	{font-family: arial;
+	font-style: regular;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 50px;
+	width: 660px;/*костыль*/
+	}
+#midblock
+	{
+	height: 245px;
+	width: 430px;
+	background-color: rgba(68,81,97);
+	position: relative;
+	left: 806px;/*костыль не удается по-нормальному позиционировать этот блок*/
+	bottom: 280px;/*костыль*/
+	margin-right: 50px;
+	margin-top: 50px;
+	}
+.top2
+	{height: 420px;
+	width: 100%;
+	background-color: rgba(245,245,245);
+	color: rgba(68,81,97);	
+	}	
+h3	
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;
+	margin-left: 50px;
+	padding-top: 50px;
+	text-align: center;
+	}
+.menu2
+	{column-count: 2;
+	height: 270px;
+	}	
+.mli
+	{font-family: arial;
+	font-style: regular;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	margin-top: -16px;		/*костыль тескт не поднять до уровня маркера списка*/
+	list-style: url(../img/cross.png);
+	list-style-position: outside;
+	}	
+/*.mli:before
+	{background-image: url(../img/cross.png);}*/	
+.top3
+	{height: 480px;
+	width: 100%;
+	background-color: #fff;
+	color: rgba(68,81,97);
+	margin-left: 50px;	
+	}	
+h4
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;
+	margin-left: 50px;
+	text-align: center;
+	/*padding-top: 50px;*/
+	}
+.block3
+	{column-count: 2;
+	margin-left: 50px;	
+	/*list-style: none;*/
+	/*background-image: url(../img/square-block.png) no-repeat left center;*/
+	}	
+.onblock3
+	{margin-left: 50px;
+	margin-bottom: 20px;	
+	/*background-image: url(../img/square-block.png) no-repeat left center;*/
+	list-style: url(../img/square-block.png);
+	list-style-position: outside;	
+	}
+.inblocktop3
+	{font-family: arial;
+	font-style: regular;
+	font-size: 24px;
+	line-height: 30px;
+	color: rgba(68,81,97);	
+	}
+.inblockbottom3
+	{font-family: arial;
+	font-style: regular;
+	font-size: 16px;
+	line-height: 24px;
+	
+	}	
+.top4
+	{height: 425px;
+	width: 100%;
+	background-color: rgba(245,245,245);
+	color: rgba(68,81,97);	
+	}
+h5
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;
+	margin-left: 50px;
+	text-align: center;
+	padding-top: 50px;
+	}
+.block4
+	{column-count: 2;
+	color: rgba(51,51,51);
+	/*height: 125px;*/
+	/*width: 480px;*/
+	}
+.blockright4
+	{background-image: url(../img/bg0.png) no-repeat;
+	list-style: url(../img/round-block.png);
+	list-style-position: outside;	
+	}	
+.inblocktop4
+	{font-family: arial;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 18px;
+	width: 440px;
+	color: #333333;
+	}
+.inblockbottom4
+	{font-family: arial;
+	font-style: regular;
+	font-size: 14px;
+	line-height: 18px;
+	width: 440px;
+	color: #989898;
+	}
+.top5
+	{height: 655px;
+	width: 100%;
+	background-color: #fff;
+	color: rgba(68,81,97);	
+	padding-bottom: 50px;/*костыль - не получается поднять блоки на 50px выше*/
+	}			
+h6
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;
+	margin-left: 50px;
+	text-align: center;
+	padding-top: 50px;
+	}
+.bumain
+	{display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	}	
+.buleft
+	{width: 300px;
+	height: 306px;
+	background-color: #445162;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: -240px; /*костыль для интервала между блокми*/
+	}
+.bumid
+	{width: 300px;
+	height: 404px;
+	background-color: #445162;
+	color: #fff;
+	border-radius: 5px;	
+	}
+.buright
+	{width: 300px;
+	height: 499px;
+	background-color: #445162;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: -240px; /*костыль для интервала между блокми*/	
+	}
+.butop
+	{color: #fff;
+	font-family: arial;
+	font-style: regular;
+	font-size: 24px;
+	line-height: 55px; /*30px костыль не удается центрировать строку в блоке*/
+	text-align: center;
+	height: 53px;
+	}	
+.buprice
+	{color: #445162;
+	font-family: arial;
+	font-style: regular;
+	font-size: 40px;
+	line-height: 65px;/*30px костыль не удается центрировать строку в блоке*/
+	text-align: center;
+	height: 67px;
+	background-color: #fff;
+	width: 296px;
+	margin-left: 2px;/*костыль* не удается центрировать блок, чтоб справа и слева рамка была*/	
+	}
+.bucent
+	{color: #fff;
+	font-family: arial;
+	font-style: regular;
+	font-size: 14px;
+	line-height: 24px; 
+	}
+.bubot
+	{height: 40px;
+	width: 260px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #445162;
+	font-family: arial;
+	font-style: bold;
+	font-size: 18px;
+	line-height: 40px; /*18px костыль не удается центрировать строку в кнопке*/
+	text-align: center;
+	margin-left: 20px;/*костыль не удается центрировать кнопку*/
+	}
+.botask
+	{height: 510px;
+	width: 100%;
+	background-color: #445162;	
+	}
+#h7	
+	{font-family: arial;
+	font-style: regular;
+	font-size: 30px;
+	line-height: 36px;
+	margin-left: 50px;
+	text-align: center;
+	padding-top: 50px;	
+	color: #fff;
+	}
+.absbottom
+	{display: flex;
+	justify-content: center;
+	}
+fieldset
+	{border: transparent;
+	}
+.text	
+	{width: 500px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #445162;
+	font-family: arial;
+	font-style: regular;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 15px;
+	}	
+.mes
+	{height: 170px;
+	}
+.in	
+	{width: 140px;
+	height: 40px;	
+	position: relative;
+	left: -323px; /*костыль не получилось позиционировать кнопку*/
+	bottom: -40px; /*костыль*/
+	}
+.botright
+	{font-family: arial;
+	font-style: regular;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	list-style: none;
+	margin-left: -150px; /*костыль не получилось сделать зазор между блоками*/
+	/*background-color: transparent; */ /*не вышло убрать белый фон с картинок */
+	}
+footer
+	{font-family: arial;
+	font-style: regular;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	color: rgba(68,81,97);
+	background-color: rgba(245;245;245);
+	width: 100%;
+	height: 25px;
+	}
