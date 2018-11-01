@@ -1,12 +1,13 @@
 * {margin: 0 auto;}
 header
-	{/*height: 323px;*/
+	{min-height: 323px;
 	width: 100%;
 	background-color: rgba(68,81,98);
-	display: flex;
+	position: relative;
 	}
-.head1l
-	{display: flex;
+
+.head1
+	{display: flex;	
 	flex-direction: column;
 	}	
 h1
@@ -16,6 +17,7 @@ h1
 	color: #fff;
 	margin-left: 50px;
 	line-height: 60px;
+	padding-top: 30px;
 	}
 #headul
 	{font-family: arial;
@@ -24,16 +26,16 @@ h1
 	color: #fff;
 	margin-left: 50px;
 	line-height: 36px;
-	list-style: url(../img/tick.png);	
+	list-style: url(../img/tick.png);
+	padding-top: 25px;	
 	}	
 #headblock
 	{height: 215px;
 	width: 470px;
-	background-color: #fff;
-	/*display: block;*/	
-	position: relative;
-/*	left: 230px;/*костыль не удается позиционировать блок*/
-/*	top: 50px;/*костыль*/
+	background-color: #fff;	
+	position: absolute;	
+	right: 50px;
+	top: 50px;
 	}
 body
 	{width: 1280px;
@@ -42,10 +44,11 @@ body
 	{
 	}
 .top1
-	{/*height: 250px; /*345 костыль блок правый добавляет высоты, победить не смог*/
+	{min-height: 345px;
 	width: 100%;
 	background-color: #fff;
-	color: rgba(68,81,97);	
+	color: rgba(68,81,97);
+	position: relative;	
 	}
 h2
 	{font-family: arial;
@@ -53,7 +56,7 @@ h2
 	font-size: 30px;
 	line-height: 36px;	
 	margin-left: 50px;
-	margin-top: 50px;
+	padding-top: 40px;
 	}
 .top1 p
 	{font-family: arial;
@@ -62,19 +65,19 @@ h2
 	line-height: 24px;
 	margin-left: 50px;
 	width: 660px;/*костыль*/
+	padding-top: 25px;
 	}
 #midblock
 	{
 	height: 245px;
 	width: 430px;
 	background-color: rgba(68,81,97);
-	position: relative;
-/*	bottom: 280px;/*костыль*/
-/*	margin-right: 50px;
-	margin-top: 50px;
+	position: absolute;
+	right: 50px;
+	top: 50px;
 	}
 .top2
-	{/*height: 420px;*/
+	{min-height: 420px;
 	width: 100%;
 	background-color: rgba(245,245,245);
 	color: rgba(68,81,97);	
@@ -89,34 +92,39 @@ h3
 	text-align: center;
 	}
 .menu2
-	{column-count: 2;
+	{/*column-count: 2*/;
 	list-style: none;
-/*	width: 50%;
-	
-*/	}	
-/*.menu22
-	{
-	
-	width: 50%;
-		
-	}*/	
+	background-color: rgba(245,245,245);	
+	}
+.m2left
+	{width: 45%;	
+	float: left;		
+	}
+.m2right
+	{width: 45%;
+	float: right;	
+	}		
 .mli
 	{font-family: arial;
 	font-style: regular;
 	font-size: 16px;
 	line-height: 24px;
 	list-style: none;
-/*	margin-left: 50px;
-	margin-bottom: 20px;
-	margin-top: -16px;		/*костыль тескт не поднять до уровня маркера списка*/
-/*	list-style: url(../img/cross.png);
-	list-style-position: outside;*/
-	}	
+	overflow: hidden; /*не пашет!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	padding-top: 25px;
+	}
 .mli:before
-	{background-image: url(../img/cross.png);}	
+	{content:"" ;
+	float: left;	
+	height: 30px;
+	width: 30px;
+	background: url(../img/cross.png);
+	margin-right: 10px;
+	margin-top: 5px;
+	}	
 .top3
 	{
-	/*height: 480px;*/
+	min-height: 480px;
 	width: 100%;
 	background-color: #fff;
 	color: rgba(68,81,97);
@@ -127,25 +135,42 @@ h4
 	font-style: regular;
 	font-size: 30px;
 	line-height: 36px;
-	margin-left: 50px;
+/*	margin-left: 50px;*/
 	text-align: center;
-	/*padding-top: 50px;*/
+	padding-top: 50px;
 	}
 .top3in
-	{column-count: 2;}	
-/*.block3
 	{column-count: 2;
-	margin-left: 50px;	
-	/*list-style: none;*/
-	/*background-image: url(../img/square-block.png) no-repeat left center;
-	}	*/
-.onblock3
-	{margin-left: 50px;
-/*	margin-bottom: 20px;	
-	/*background-image: url(../img/square-block.png) no-repeat left center;
-	list-style: url(../img/square-block.png);
-	list-style-position: outside;	*/
+		
 	}
+.top3left	{
+	display: flex;	
+	flex-direction: column;
+	
+}
+.top3right	{
+	display: flex;	
+	flex-direction: column;
+	
+}	
+.onblock3 	{
+	padding-top: 25px;
+	
+/*	background-color: rgba(68,81,97);
+	background-image: url(../img/square-block.png)
+	float: left;*/
+	
+	}
+.image	{
+	width: 200px;
+	height: 150px;	
+	background-color: rgba(68,81,97);
+	float: left;
+}
+.figg	{
+	/*width: 350px;*/
+	padding-left: 10px;
+}	
 .inblocktop3
 	{font-family: arial;
 	font-style: regular;
@@ -158,13 +183,14 @@ h4
 	font-style: regular;
 	font-size: 16px;
 	line-height: 24px;
-	
+/*	width: 350px;*/ /*не пашет!!!!!!!!!!!!!!!!!!!*/
 	}	
 .top4
-	{/*height: 425px;*/
+	{min-height: 425px;
 	width: 100%;
 	background-color: rgba(245,245,245);
-	color: rgba(68,81,97);	
+	color: rgba(68,81,97);
+	
 	}
 h5
 	{font-family: arial;
@@ -174,18 +200,43 @@ h5
 	margin-left: 50px;
 	text-align: center;
 	padding-top: 50px;
+	margin-left: 50px;
 	}
 .block4
-	{column-count: 2;
+	{margin-left: 50px;
+	column-count: 2;
 	color: rgba(51,51,51);
-	/*height: 125px;*/
-	/*width: 480px;*/
+	padding-top: 25px;
+	
 	}
-.blockright4
-	{/*background-image: url(../img/bg0.png) no-repeat;
-	list-style: url(../img/round-block.png);
-	list-style-position: outside;*/	
+.roundimage	{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: rgba(68,81,97);
+	float: left;
+}	
+.text4	{
+	width: 470px;
+	height: 110px;
+	margin-left: 100px;
+	background-color: #ebebeb;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 25px;
+}
 
+.text4:before {
+	content: "";
+	border: 15px solid transparent;	
+  	border-right: 15px solid #ebebeb;
+  	position: absolute;
+  	top: 20px;
+  	left: -30px;
+}
+}
+.blockright4
+	{padding-top: 50px;
 	}
 .blockright4:before
 	{}		
@@ -196,6 +247,8 @@ h5
 	line-height: 18px;
 	width: 440px;
 	color: #333333;
+	margin-bottom: 10px;
+	padding-top: 10px;
 	}
 .inblockbottom4
 	{font-family: arial;
@@ -204,13 +257,14 @@ h5
 	line-height: 18px;
 	width: 440px;
 	color: #989898;
+	margin-left: 15px;
 	}
 .top5
-	{/*height: 655px;*/
+	{/*min-height: 655px;*/
 	width: 100%;
 	background-color: #fff;
 	color: rgba(68,81,97);	
-	margin-bottom: 50px;/*костыль - не получается поднять блоки на 50px выше*/
+	padding-bottom: 50px;/*костыль - не получается поднять блоки на 50px выше*/
 	}			
 h6
 	{font-family: arial;
@@ -219,35 +273,36 @@ h6
 	line-height: 36px;
 	margin-left: 50px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 40px;
 	}
 .bumain
 	{display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
+	padding-top: 25px;
 	}	
 .buleft
 	{width: 300px;
-	/*height: 306px;*/
+	min-height: 306px;
 	background-color: #445162;
 	color: #fff;
 	border-radius: 5px;
-/*	margin-right: -240px; /*костыль для интервала между блокми*/
+	margin-right: -100px; /*костыль для интервала между блокми*/
 	}
 .bumid
 	{width: 300px;
-	/*height: 404px;*/
+	min-height: 404px;
 	background-color: #445162;
 	color: #fff;
 	border-radius: 5px;	
 	}
 .buright
 	{width: 300px;
-	/*height: 499px;*/
+	min-height: 499px;
 	background-color: #445162;
 	color: #fff;
 	border-radius: 5px;
-/*	margin-left: -240px; /*костыль для интервала между блокми*/	
+	margin-left: -100px; /*костыль для интервала между блокми*/	
 	}
 .butop
 	{color: #fff;
@@ -276,7 +331,8 @@ h6
 	font-style: regular;
 	font-size: 14px;
 	line-height: 24px;
-
+	margin-top: 15px;
+	margin-bottom: 15px;
 	}
 .bubot
 	{/*height: 40px;*/
@@ -293,10 +349,10 @@ h6
 	text-transform: uppercase;
 	}
 .botask
-	{/*height: 510px;*/
-	
+	{min-height: 510px;	
 	width: 100%;
-	background-color: #445162;	
+	background-color: #445162;
+	/*margin-top: 50px;*/	
 	}
 #h7	
 	{font-family: arial;
@@ -317,7 +373,7 @@ fieldset
 	}
 .text	
 	{width: 500px;
-	/*height: 40px;*/
+	min-height: 40px;
 	border-radius: 5px;
 	background-color: #fff;
 	color: #445162;
@@ -328,11 +384,11 @@ fieldset
 	margin-top: 15px;
 	}	
 .mes
-	{/*height: 170px;*/
+	{min-height: 170px;
 	}
 .in	
 	{width: 140px;
-	/*height: 40px;*/	
+	min-height: 40px;	
 	position: relative;
 	left: -323px; /*костыль не получилось позиционировать кнопку*/
 	bottom: -40px; /*костыль*/
@@ -344,8 +400,9 @@ fieldset
 	line-height: 24px;
 	color: #fff;
 	list-style: none;
-	margin-left: -150px; /*костыль не получилось сделать зазор между блоками*/
+	margin-left: -400px; /*костыль не получилось сделать зазор между блоками*/
 	/*background-color: transparent; */ /*не вышло убрать белый фон с картинок */
+	margin-top: 25px;
 	}
 footer
 	{font-family: arial;
